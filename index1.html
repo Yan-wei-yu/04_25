@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+
+    <title>資管系公告看板系統</title>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .link-top {
+            width: 100%;
+            height: 1px;
+            border-top: solid #ACC0D8 5px;
+        }
+
+        .acolor {
+            color: rgb(1, 129, 158);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .textstyle {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        #text2,#text3,#text4,#text5,#text6 {
+            display: none;
+        }
+    </style>
+</head>
+<link rel="icon" href="picture/ico.ico" type="image/x-icon" />
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="index.html">
+                <img src="picture/logo.png" alt="" width="200" height="25" class="d-inline-block align-text-top"> </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ms-5 me-5">
+                        <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item ms-5 ">
+                        <a class="nav-link" href="product.html">圖片瀏覽</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="picture/picture01.jpg" alt="1" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="picture/picture02.jpg" alt="2" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="picture/picture03.jpg" alt="3" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="mt-4">資訊捷徑-Information</h3>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-36-09">本位課程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-39-15">教學知識地圖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-40-52">法規要點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-42-18">學生資訊</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://nfuim.nfu.edu.tw/zh/2020-01-09-02-28-28">下載專區</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-43-32">網路資源</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.nfu.edu.tw/zh/nfu-calendar">網站導覽</a>
+                    </li>
+                </ul>
+                <h3 class="mt-4">相關連結</h3>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.tipo.gov.tw/mp.asp">經濟部智慧財產局</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://nfucc.nfu.edu.tw/index.php/zh/nfu-pims">資安暨個資專區</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sites.google.com/view/nfuimors/%E9%A6%96%E9%A0%81#h.ippt6milnb1o">線上登記平台</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-8" style="border-width:3px;border-style:groove;border-color:#68a4f8;padding:5px;">
+                <div class="d-flex" style="height: 50px;">
+                    <div class="p-2 bg-light flex-fill"
+                        style="text-align: center; width: 50px;height: 100%;border-right: solid #ACC0D8 2px;"><a
+                            onclick="con(1)" href="#最新公告">最新公告</a></div>
+                    <div class="p-2 bg-light flex-fill"
+                        style="text-align: center; width: 50px;height: 100%;border-right: solid #ACC0D8 2px;"><a
+                            onclick="con(2)" href="#好神榮譽版">好神榮譽版</a></div>
+                    <div class="p-2 bg-light flex-fill"
+                        style="text-align: center; width: 50px;height: 100%;border-right: solid #ACC0D8 2px;"><a
+                            onclick="con(3)" href="#招生公告">招生公告</a></div>
+                    <div class="p-2 bg-light flex-fill"
+                        style="text-align: center; width: 50px;height: 100%;border-right: solid #ACC0D8 2px;"><a
+                            onclick="con(4)" href="#競賽、活動">競賽、活動</a></div>
+                    <div class="p-2 bg-light flex-fill"
+                        style="text-align: center; width: 50px;height: 100%;border-right: solid #ACC0D8 2px;"><a
+                            onclick="con(5)" href="#工作機會">工作機會</a></div>
+                    <div class="p-2 bg-light flex-fill"
+                        style="text-align: center; width: 50px;height: 100%;border-right: solid #ACC0D8 2px;"><a
+                            onclick="con(6)" href="#演講公告">演講公告</a></div>
+                </div>
+                <div class="link-top"></div>
+                <div id="text1">
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-06/item/1292-ibm-campus-program-summer-intern-campus-hire">【資管系 公告】IBM Campus Program- Summer Intern & Campus Hire 招募資訊</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 12 四月 2022 16:58</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1291-111-04-15">【資管系 公告】【資管系 公告】111年04月15日 書報討論</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 12 四月 2022 14:37</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1290-2022-04-12-01-54-20">【資管系 公告】中部創新自造教育基地將舉辦認識創業講座</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 12 四月 2022 09:53</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-06/item/1289-2022-mpt-4-17">【資管系 公告】緯創資通【 2022 MPT儲備人才計劃】報名開跑! _ 履歷收件至4/17(日)</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 11 四月 2022 13:34</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-06/item/1288-2022-04-11-01-59-02">【資管系 公告】世祥汽材製造廠股份有限公司(斗南廠)徵才公告</a>
+                    <p class="textstyle" style="padding-left:10px;">週一, 11 四月 2022 09:446</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-06/item/1287-110-4-25-4-27">【資管系 公告】110學年度暑修課程開班意願調查時間4月25日至4月27日</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週五, 08 四月 2022 14:18</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1286-aws-4-21">【資管系 公告】亞馬遜AWS校園徵才資訊及4.21線上活動邀請</a>
+                    <p class="textstyle" style="padding-left:10px;">週五, 08 四月 2022 14:17</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1285-2022">【資管系 公告】意藍資訊 2022年度徵才計畫⯑智能數據職涯，邀您一同加入！</a>
+                    <p class="textstyle" style="padding-left:10px;">週五, 08 四月 2022 14:15</p>
+                    <div align="center"> <input type="button" onclick="location.href='index.html'" value="上一頁"></input></div>
+                </div>
+                <div id="text2">
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/1237-109-109">【資管系 公告】本系藍友峰老師109年度榮獲教育部109年度大專校院教學實踐研究績優計畫</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 14 二月 2022 09:03</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/1231-2022-01-13-04-40-20">【資管系 公告】恭賀！本系吳純慧教授榮任管理學院第七任院長</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週四, 13 一月 2022 12:39</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/1204-2020">【資管系 公告】恭喜本系同學榮獲2021年校慶全國大專暨高中學生專題競賽多項獎項</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 29 十一月 2021 18:05</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/1094-2021-07-08-06-58-11">【資管系 公告】恭賀本系陳大正老師指導學生榮獲「科技部大專生研究創作獎」</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週四, 08 七月 2021 14:55</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/987-2021-03-30-08-30-42">【資管系 公告】狂賀！本系沈又豪同學榮獲全國大專校院田徑公開賽大專甲組鏈球金牌</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 30 三月 2021 16:28</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/964-109-2">【資管系 公告】109學年度第2學期「服務學習(二)」增開「夜間重修專班」選課須知</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 02 三月 2021 16:17</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/781-2020-07-09-09-00-18">【資管系 公告】賀！藍友烽老師參加教育部教學實踐研究計畫(專案)技術實作計畫通過名單</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週四, 09 七月 2020 16:59</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-24/item/780-2020-07-09-08-59-03">【資管系 公告】賀！本系陳大正老師參加科技部大專生研究計畫通過名單</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週四, 09 七月 2020 16:54</p>
+                </div>
+                <div id="text3">
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1286-aws-4-21">【資管系 公告】亞馬遜AWS校園徵才資訊及4.21線上活動邀請劃</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週五, 08 四月 2022 14:17</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1285-2022">【資管系 公告】意藍資訊 2022年度徵才計畫⯑智能數據職涯，邀您一同加入！</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週五, 08 四月 2022 14:15</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1284-2022">【資管系 公告】2022年度陽明海運招募訊息</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週五, 08 四月 2022 14:14</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1283-2022-04-08-06-14-17">【資管系 公告】【台積電】企業徵才說明會 ~ 名額有限</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週五, 08 四月 2022 14:12</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1158-111">【資管系 公告】111學年度碩士班甄試招生，10/15開始報名囉！</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週四, 07 十月 2021 16:37</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1145-110">【資管系 公告】工業技術研究院 -- 110學年度下學期實習~即日起開始報名囉！</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週四, 30 九月 2021 00:51</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/1112-2021-08-23-04-13-07">【資管系 公告】求才快報－永和國中</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 23 八月 2021 12:09</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-30-24/item/833-110-109-11-05">【資管系公告】110學年度碩士班推薦甄選開始報名！《報名日期：109年10月15日至109年11月05日截止》</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 06 十月 2020 08:49</p>
+                </div>
+                <div id="text4">
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1299-2022">【資管系 公告】「2022年全國虛擬投資競賽」鼓勵學生踴躍參與</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 19 四月 2022 09:32</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1282-2022-04-08-06-12-11">【資管系 公告】一對一履歷健檢與模擬面試</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週五, 08 四月 2022 14:11</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1276-2021-ai-2022-4-30">【資管系 公告】『2021虎頭山AI智駕車學生挑戰賽』將於2022年4月30日熱烈舉辦，即日起開放報名啦！！</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 22 三月 2022 09:38</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1267-aeb-walking-library-3-14-05-15">【資管系 公告】【圖書館】AEB Walking Library有獎徵答活動開跑～碁智爭鐸戰，獎金拿不完！3/14中午起~05/15</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 14 三月 2022 16:39</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1257-2022-10">【資管系 公告】2022 少年頭家全國創業實務競賽熱烈報名中總獎金高達10萬！等的就是你！</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 22 二月 2022 09:12</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1217-2021">【資管系 公告】2021雲林縣三校聯合聖誕晚會資訊暨接駁車乘車報名</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 14 十二月 2021 15:28</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1207-110-12-2">【資管系 公告】110學年度 資管週 - 12/2(四) 專題競賽/a>
+                        <p class="textstyle" style="padding-left:10px;">寫於 週一, 29 十一月 2021 18:13</p>
+                        <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-48-52/item/1177-walking-library-11-24">【資管系 公告】【圖書館】Walking Library 電子雜誌有獎徵答活動開跑～腦力碁盪，刊刊鐸獎金，即日起至11/24止</a>
+                        <p class="textstyle" style="padding-left:10px;">寫於 週四, 21 十月 2021 01:35</p>
+                </div>
+                <div id="text5">
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1302-2022-04-23-03-28-54">【資管系 公告】裕隆日產汽車正式職缺&暑期實習計畫招募中</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週六, 23 四月 2022 11:27</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1301-2022-6-1">【資管系 公告】虎科大2022校園徵才博覽會更改至6/1(三)</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週六, 23 四月 2022 11:26</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1300-4-26">【資管系 公告】4/26世祥汽材企業說明會</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 19 四月 2022 09:36</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1278-2022">【資管系 公告】[管理學院]2022年和泰汽車暑期實習訊息</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週六, 23 四月 2022 11:26</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1265-2022-6-100-3-31">【資管系 公告】【2022統一證券儲備主管計劃】廣招【資訊金融科技人才】月薪6萬、年薪獎100萬，3/31報名截止！</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 08 三月 2022 09:36</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1262-2022-03-01-01-05-01">【資管系 公告】【程泰機械/胡連精密】企業徵才說明會</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 01 三月 2022 09:04</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1247-2022-02-21-08-05-13">【資管系 公告】【台中精機/京元電子/上銀科技/萬邦外貿】企業徵才說明會</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 21 二月 2022 16:04</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-30/item/1224-ibm-2022">【資管系 公告】求才快報 - IBM 2022</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週三, 29 十二月 2021 13:14</p>
+                </div>
+                <div id="text6">
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1304-ai">【資管系 公告】上銀科技AI資訊人才實習企劃</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週六, 23 四月 2022 11:29</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1291-111-04-15">【資管系 公告】111年04月15日 書報討論</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 12 四月 2022 14:37</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1290-2022-04-12-01-54-20">【資管系 公告】中部創新自造教育基地將舉辦認識創業講座</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週二, 12 四月 2022 09:53</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1275-2022">【資管系 公告】【2022通訊大賽說明會】，加入創新行列，為未來職涯加分</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 21 三月 2022 17:17</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1270-2022-03-17-02-55-02">【資管系 公告】【資管系 公告】名額有限【友達光電/光寶科技】企業徵才說明會</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週四, 17 三月 2022 10:54</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1263-111-03-04">【資管系 公告】111.03.04 書報討論</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週五, 04 三月 2022 12:36</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1250-2022">【資管系 公告】 [國立中正大學2022第十四屆中小企業國際研討會 邀請函]敬請廣為宣傳周知</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 21 二月 2022 16:07</p>
+                    <a class="acolor" href="http://nfuim.nfu.edu.tw/zh/2015-07-16-06-49-58/item/1208-110-12-3">【資管系 公告】110學年度 資管週 - 12/3(五) 業師演講</a>
+                    <p class="textstyle" style="padding-left:10px;">寫於 週一, 29 十一月 2021 18:14</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+        <p>虎尾資管版權所有</p>
+    </div>
+    <script>
+        flag = "text1";
+        function con(i) { //引數傳遞時傳遞字串似乎有問題，這裡採用的是數字傳參
+            document.getElementById(flag).style.display = "none";
+            document.getElementById("text" + i).style.display = "inline";
+            flag = "text" + i;
+        }
+    </script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+</body>
+
+</html>
